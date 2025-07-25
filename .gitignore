@@ -9,4 +9,4 @@ _site/
 Gemfile.lock
 
 # Log Files
-*.log
+*.log.DS_Store
