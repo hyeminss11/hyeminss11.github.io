@@ -1,0 +1,70 @@
+<!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<!-- for tags-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. 태그 버튼 클릭 시 프로젝트 필터링
+      document.querySelectorAll('.tag-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const selectedTag = button.getAttribute('data-tag').toLowerCase();
+  
+          // 버튼 active 클래스 설정
+          document.querySelectorAll('.tag-btn').forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+  
+          // 카드 필터링
+          document.querySelectorAll('.project.card').forEach(card => {
+            const badges = Array.from(card.querySelectorAll('.badge')).map(el => el.textContent.trim().toLowerCase());
+            if (selectedTag === 'all' || badges.includes(selectedTag)) {
+              card.classList.remove('d-none');
+            } else {
+              card.classList.add('d-none');
+            }
+          });
+        });
+      });
+  
+      // 2. 태그 색상 매핑
+      const tagColors = {
+        javascript: 'warning',
+        python: 'info',
+        css: 'primary',
+        html: 'danger',
+        react: 'success',
+        android: 'success',
+        'material design': 'dark',
+        nothing: 'secondary',
+        important: 'danger'
+      };
+  
+      document.querySelectorAll('.tag-btn').forEach((btn) => {
+        const tag = btn.dataset.tag.toLowerCase();
+        const color = tagColors[tag];
+        if (color) {
+          btn.classList.remove('btn-outline-primary');
+          btn.classList.add(`btn-outline-${color}`);
+        }
+      });
+    });
+  </script>

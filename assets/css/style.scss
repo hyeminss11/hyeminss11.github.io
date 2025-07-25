@@ -1,0 +1,29 @@
+---
+---
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.about-flex img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+.about-flex div {
+  max-width: 600px;
+}
+
+footer {
+  display: none !important;
+}
+
+#tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px; /* 버튼 사이 간격, 조절 가능 */
+  margin-bottom: 1.5rem;
+}
+
+@import "portfolYOU";
