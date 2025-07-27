@@ -17,6 +17,10 @@
   {% endfor %}
 </div>
 
+<p style="text-align:center; margin: 1em 0; color: #666; font-size: 0.95em;">
+  Click on any project card to view full details, screenshots, and code links.
+</p>
+
 <div class="card-columns m-3 mt-5">
 
   <!-- Remote Projects -->
@@ -90,25 +94,25 @@ searchInput.addEventListener('input', function () {
   });
 });
 
+/*
 // Tag color mapping
 document.addEventListener('DOMContentLoaded', function () {
   const tagColors = {
-  nlp: 'info',
-  visualization: 'danger',
-  pandas: 'primary',
-  pytorch: 'warning',
-  xai: 'success',
-  cnn: 'dark'
-};
+    nlp: 'info',
+    visualization: 'danger',
+    pandas: 'primary',
+    pytorch: 'warning',
+    xai: 'success',
+    cnn: 'dark'
+  };
 
-  document.querySelectorAll('.tag-btn').forEach((btn) => {
-    const tag = btn.dataset.tag;
-    const color = tagColors[tag.toLowerCase()];
+  document.querySelectorAll('.tag').forEach((el) => {
+    const tag = el.textContent.trim().toLowerCase();
+    const color = tagColors[tag];
     if (color) {
-      btn.classList.remove('btn-outline-primary');
-      btn.classList.add(`btn-outline-${color}`);
+      el.classList.add(`bg-${color}`, 'text-white');
     }
   });
 });
-
+*/
 </script>
