@@ -1,7 +1,7 @@
 ---
 name: EEG-based Harmful Brain Activity Classification using Deep Learning
 tools: [Python, PyTorch, Machine Learning, CNN, XAI]
-image: ../assets/images/gradcam.png
+image: ../assets/images/HBAproject/gradcam.png
 description: EEG signals are inherently challenging to interpret, even for trained clinicians. This study investigates whether deep learning models can accurately detect harmful brain activity from EEG data, while also addressing the interpretability of model predictions.
 ---
 
@@ -15,7 +15,6 @@ This study explores how deep learning models can detect neurological disorders f
   - The project is based on the Kaggle competition [HMS - Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification).  
   - We used 50-second EEG segments labeled as one of five harmful brain activity types (excluding “Others”).
 
-
 - **Process**
   - Preprocessed raw EEG using **montage transformation** and **bandpass filtering**
   - Converted EEG into **scalogram images** using Continuous Wavelet Transform (CWT)
@@ -26,7 +25,7 @@ This study explores how deep learning models can detect neurological disorders f
   - Achieved **~81% accuracy** using ensemble, **~75%** with ResNet18
 
 <p align="center">
-  <img src="../assets/images/gradcam.png" alt="preview" width="550">
+  <img src="../assets/images/HBAproject/gradcam.png" alt="preview" width="500">
 </p>
 
 - **My Contribution** <br>
@@ -42,5 +41,5 @@ This study explores how deep learning models can detect neurological disorders f
 
 
 <p class="text-center">
-{% include elements/button.html link="https://github.com/hyeminss11/harmful-brain-activities" text="Learn More" %}
+{% include elements/button.html link="https://github.com/hyeminss11/harmful-brain-activity-classification" text="Learn More" %}
 </p>
