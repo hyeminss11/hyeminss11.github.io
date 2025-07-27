@@ -6,16 +6,20 @@ description: EEG signals are inherently challenging to interpret, even for train
 ---
 
 ## **EEG-based Harmful Brain Activity Classification using Deep Learning**
+<br>
 
+#### 🍀 **Overview**
 This study explores how deep learning models can detect neurological disorders from EEG data, while addressing interpretability challenges using model explainability tools.
 
-<br>
-- **Dataset**<br>
+---
 
+#### 🍀 **Dataset**
   - The project is based on the Kaggle competition [HMS - Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification).  
-  - We used 50-second EEG segments labeled as one of five harmful brain activity types (excluding “Others”).
+  - We used 50-second EEG segments labeled as one of five harmful brain activity types (excluding “Others”).<br>
 
-- **Process**
+---
+
+#### 🍀 **Process**
   - Preprocessed raw EEG using **montage transformation** and **bandpass filtering**
   - Converted EEG into **scalogram images** using Continuous Wavelet Transform (CWT)
   - Trained and compared multiple models including:
@@ -28,14 +32,18 @@ This study explores how deep learning models can detect neurological disorders f
   <img src="../assets/images/HBAproject/gradcam.png" alt="preview" width="500">
 </p>
 
-- **My Contribution** <br>
+---
+
+#### 🍀 **My Contribution** <br>
   - Implemented and trained **ResNet18** for EEG classification
   - Applied **Grad-CAM** for model interpretability
   - Tested baseline **2D CNN** → discontinued due to low generalization
   - Collaborated on model evaluation and ablation studies
+<br>
 
+---
 
-- **Limitations**<br>
+#### 🍀 **Limitations**<br>
   - Grad-CAM does not support ViT well → heatmaps were not interpretable
   - Future work could include SHAP, Attention Rollout, or LRP for ViT explainability
 
