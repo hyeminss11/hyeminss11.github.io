@@ -10,7 +10,7 @@ weight: 3
   <img src="/assets/images/mypic.jpeg" alt="My photo" style="max-width: 300px; border-radius: 12px;" />
 
   <div style="max-width: 500px;">
-    <h2>HM</h2>
+    <h2>Hyemin Jeong</h2>
 
     <p>Hi! I’m currently pursuing a master’s degree in Artificial Intelligence in the UK. I’m particularly interested in NLP and the social impact of AI. Ultimately, my goal is to apply my AI knowledge to help solve crimes and contribute to public safety.</p>
 
