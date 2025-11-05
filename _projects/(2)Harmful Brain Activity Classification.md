@@ -1,6 +1,6 @@
 ---
 name: EEG-based Harmful Brain Activity Classification using Deep Learning
-tools: [Python, PyTorch, Machine Learning, CNN, XAI]
+tools: [Python, PyTorch, Machine Learning, CNN, ResNET, XAI]
 image: ../assets/images/HBAproject/gradcam.png
 description: EEG signals are inherently challenging to interpret, even for trained clinicians. This study investigates whether deep learning models can accurately detect harmful brain activity from EEG data, while also addressing the interpretability of model predictions.
 ---
