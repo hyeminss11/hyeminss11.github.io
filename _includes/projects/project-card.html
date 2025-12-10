@@ -10,7 +10,9 @@
           {%- endif -%}
         {{ project_name }}
       </h5>
-      <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+      <div class="desc-container">
+        <p id="{{ project_id }}-desc" class="card-text desc-text">{{ project_desc }}</p>
+      </div>
       <p id="{{ project_id }}-tools" class="card-text">
         {%- for tool in project_tools -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
