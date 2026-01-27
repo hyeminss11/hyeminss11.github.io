@@ -1,5 +1,5 @@
 ### Site Settings ###
-title               : HM Portfolio
+title               : Hyemin Jeong Portfolio
 description         : Hyemin’s AI/ML Portfolio
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : hyeminss11/hyeminss11      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
@@ -22,7 +22,6 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
-  - pages/blog.html
   - pages/projects.html
 
 

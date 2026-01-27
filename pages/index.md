@@ -1,6 +1,6 @@
 ---
 layout: default
-title: HM Portfolio
+title: AI/ML Portfolio
 permalink: /
 ---
 
