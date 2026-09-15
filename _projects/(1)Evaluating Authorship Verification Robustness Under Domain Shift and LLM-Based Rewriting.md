@@ -48,25 +48,43 @@ This project investigates the robustness of transformer-based authorship verific
 ### Results
 
 #### In-Domain (Article–Article)
-| Model | ROC–AUC | Accuracy | F1 Score |
-|-------|---------|----------|----------|
-| DistilBERT | 0.8882 | 0.7999 | 0.8161 |
-| RoBERTa | 0.8785 | 0.7946 | 0.8084 |
-| BigBird | 0.8108 | 0.7321 | 0.7438 |
+
+<table>
+  <thead>
+    <tr><th>Model</th><th>ROC-AUC</th><th>Accuracy</th><th>F1 Score</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DistilBERT</td><td>0.8882</td><td>0.7999</td><td>0.8161</td></tr>
+    <tr><td>RoBERTa</td><td>0.8785</td><td>0.7946</td><td>0.8084</td></tr>
+    <tr><td>BigBird</td><td>0.8108</td><td>0.7321</td><td>0.7438</td></tr>
+  </tbody>
+</table>
 
 #### Cross-Domain (Article–Tweet)
-| Model | ROC–AUC | Accuracy | F1 Score |
-|-------|---------|----------|----------|
-| DistilBERT | 0.8711 | 0.7874 | 0.8006 |
-| RoBERTa | 0.8703 | 0.6127 | 0.4880 |
-| BigBird | 0.8149 | 0.6719 | 0.5891 |
+
+<table>
+  <thead>
+    <tr><th>Model</th><th>ROC-AUC</th><th>Accuracy</th><th>F1 Score</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DistilBERT</td><td>0.8711</td><td>0.7874</td><td>0.8006</td></tr>
+    <tr><td>RoBERTa</td><td>0.8703</td><td>0.6127</td><td>0.4880</td></tr>
+    <tr><td>BigBird</td><td>0.8149</td><td>0.6719</td><td>0.5891</td></tr>
+  </tbody>
+</table>
 
 #### Worst Case (Impersonation + Domain Shift)
-| Model | ROC–AUC | Accuracy | F1 Score |
-|-------|---------|----------|----------|
-| DistilBERT | 0.5590 | 0.5406 | 0.5431 |
-| RoBERTa | 0.5587 | 0.5391 | 0.5455 |
-| BigBird | 0.5444 | 0.5316 | 0.5305 |
+
+<table>
+  <thead>
+    <tr><th>Model</th><th>ROC-AUC</th><th>Accuracy</th><th>F1 Score</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>DistilBERT</td><td>0.5590</td><td>0.5406</td><td>0.5431</td></tr>
+    <tr><td>RoBERTa</td><td>0.5587</td><td>0.5391</td><td>0.5455</td></tr>
+    <tr><td>BigBird</td><td>0.5444</td><td>0.5316</td><td>0.5305</td></tr>
+  </tbody>
+</table>
 
 ### Interpretability (SHAP)
 **SHAP (SHapley Additive exPlanations)** analysis revealed how the models actually make decisions:
