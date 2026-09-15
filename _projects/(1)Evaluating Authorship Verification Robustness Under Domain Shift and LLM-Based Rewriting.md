@@ -48,21 +48,21 @@ This project investigates the robustness of transformer-based authorship verific
 ### Results
 
 #### In-Domain (Article–Article)
-| Model | ROC-AUC | Accuracy | F1 Score |
+| Model | ROC–AUC | Accuracy | F1 Score |
 |-------|---------|----------|----------|
 | DistilBERT | 0.8882 | 0.7999 | 0.8161 |
 | RoBERTa | 0.8785 | 0.7946 | 0.8084 |
 | BigBird | 0.8108 | 0.7321 | 0.7438 |
 
 #### Cross-Domain (Article–Tweet)
-| Model | ROC-AUC | Accuracy | F1 Score |
+| Model | ROC–AUC | Accuracy | F1 Score |
 |-------|---------|----------|----------|
 | DistilBERT | 0.8711 | 0.7874 | 0.8006 |
 | RoBERTa | 0.8703 | 0.6127 | 0.4880 |
 | BigBird | 0.8149 | 0.6719 | 0.5891 |
 
 #### Worst Case (Impersonation + Domain Shift)
-| Model | ROC-AUC | Accuracy | F1 Score |
+| Model | ROC–AUC | Accuracy | F1 Score |
 |-------|---------|----------|----------|
 | DistilBERT | 0.5590 | 0.5406 | 0.5431 |
 | RoBERTa | 0.5587 | 0.5391 | 0.5455 |
