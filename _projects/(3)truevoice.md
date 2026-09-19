@@ -2,9 +2,9 @@
 name: TrueVoice — Detecting AI Voice-Cloning Scams with Gemma 4
 tools: [Python, PyTorch, Deep Learning, Audio, AI Safety, Gemma 4]
 image: ../assets/images/truevoice/logo.png
+award: "🏆 Safety & Trust Track Winner"
 description: A browser-based tool that detects AI voice-cloning (deepfake) phone scams, built on Gemma 4's multimodal audio encoder. Winner of the Safety & Trust track at the Gemma 4 Good Hackathon (Google DeepMind × Kaggle). Repurposes a frozen audio encoder as an anti-spoofing feature extractor, reaching 5.20% EER with only a 1.5MB classification head.
 ---
-
 
 ## **TrueVoice — Detecting AI Voice-Cloning Scams with Gemma 4**
 <br>
