@@ -18,7 +18,7 @@ weight: 3
 
     <p>💌 <a href="mailto:hyeminss11@gmail.com">hyeminss11@gmail.com</a></p>
 
-    <p>🔗 <a href="https://github.com/hyeminss11">GitHub</a> | <a href="https://linkedin.com/in/hyeminss11">LinkedIn</a></p>
+    <p>🔗 <a href="https://github.com/hyeminss11">GitHub</a> | <a href="https://linkedin.com/in/hyeminjeong">LinkedIn</a></p>
   </div>
 
 </div>
